@@ -10,6 +10,8 @@ SELECT * FROM student WHERE ssc > 30 AND hsc > 60 AND id > 5
 
 This is a rule-based natural-language-to-SQL system built in 2023, before LLM-based text-to-SQL was common. Every step from the question to the query is explicit and inspectable, so you can see exactly why a question produced a given query.
 
+**Publication:** this work led to a [Springer book chapter](https://link.springer.com/chapter/10.1007/978-981-97-8193-5_6). The results reported there come from the research version of the system, which is not in this repository.
+
 ## How it works
 
 The question goes through a fixed NLP pipeline, with each stage in its own function in `QueryAssist.ipynb`:
